@@ -40,3 +40,10 @@ li{
 ol{
     margin-bottom:50px;
 }
+.dark{
+    color:white;
+    background-color: black;
+}
+.dark h2{
+ color: #4f9acf;
+}
