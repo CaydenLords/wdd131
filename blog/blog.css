@@ -1,0 +1,94 @@
+:root {
+    --primary-color: #6B0504;
+    --secondary-color: #A3320B;
+    --accent-color: #E6AF2E;
+    --text-dark: #001514;
+    --text-light: #FBFFFE;
+    --primary-font: "Baskerville Old Face" ,sans-serif;
+    --secondary-font: "Times New Romans", sans-serif;
+    }
+body{
+    font-family: var(--secondary-font);
+    text-align: center;
+}
+h1, h2, label{
+    font-family: var(--primary-font);
+}
+main{
+    display: grid;
+    grid-template-columns: 72% 28%;
+}
+#archives{
+    grid-column: 1;
+}
+#filters{
+    grid-column: 2;
+    text-align: left;
+}
+#book1{
+    display: inline-grid;
+    grid-template-columns: 29% 71%;
+}
+#book2{
+    display: inline-grid;
+    grid-template-columns: 29% 71%;
+}
+.sidebar{
+    grid-column: 1;
+    text-align: left;
+}
+.article{
+    grid-column: 2;
+}
+#menu{
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    justify-content: end;
+    justify-items:end;
+    border-top: solid 2px var(--accent-color);
+    border-bottom: solid 2px var(--accent-color);
+    padding: 10px;
+}
+select{
+    min-width: 100px;
+
+}
+
+h1{
+    padding: 10px;
+    font-size: 40px;
+}
+ul{
+    list-style-type: none;
+    color:var(--primary-color);
+    font-weight: bold;
+}
+.cover{
+    text-align: center;
+}
+label, a, p.article_text{
+    display: inline;
+}
+.article_content{
+    text-align: left;
+}
+label{
+    display: inline-block;
+    width: 100px;
+    padding: 10px;
+}
+h2, a{
+    color: var(--secondary-color)
+}
+.skiptocontent{
+    text-align: center;
+}
+.skiptocontent a{
+    position:absolute;
+    top: -40px;
+    background-color: #6B0504;
+    color:#FBFFFE;
+}
+.skiptocontent a:focus {
+    top: 0px;
+}
