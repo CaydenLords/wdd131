@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A Credit Card Form">
+    <meta name="author" content="Cayden Lords">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link rel = "stylesheet" type="text/css" href = "credit.css"/>
+    <script src = "credit.js" defer></script>
+    <title>Credit Card Form</title>
+</head>
+<body>
+    <form class = "payment">
+        <fieldset id = "front">
+            <p id = total>TOTAL: $199</p>
+            <img class="card-image" src="card.svg" height="55px">
+            <div id = "number">
+                <label id = "number_label">CARD NUMBER</label>            
+                <br>
+                <input id = "card_number" value = "1234 5678 9101 1020">
+            </div>
+            <div id = "holder">
+                <label id = "holder_label">CARD HOLDER</label>
+                <br>
+                <input id = "card_holder" value = "John Doe">
+            </div>
+            <div id = expire>
+                <label id = "Expiration">EXPIRATION</label>
+                <br>
+                <input id = "ex_month" value = "MM">
+                <input id = "ex_year" value = "YY">
+            </div>
+        </fieldset>
+        <fieldset id = back>
+            <div id = "bar"></div>
+            <div id = "security">
+                <label>CVC/CVV</label>
+                <br>
+                <input id = "security_num" value = "xxx">
+            </div>
+        </fieldset>
+        <button id = "submit">Submit</button>
+    </form>
+</body>
+</html>
