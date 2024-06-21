@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=family=Amatic+SC&display=swap");
+:root {
+--primary-color: #1B98E0;
+--secondary-color: #59c3c3;
+--text-dark: #333;
+--text-light: #ebebeb;
+--primary-font: Arial, Helvetica,sans-serif;
+--secondary-font:  'Courier New', monospace;
+}
+body{
+    font: var(--primary-font);
+    align-self:center;
+    margin: 0;
+}
+header{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 3em;
+}
+.recipe{
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+    border: .01em black solid;
+    border-radius: 5px;
+    width: 80%;
+    flex-direction: column;
+    padding: 5%;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.recipe_desc{
+    display:none;
+}
+#search{
+    display: flex;
+    padding-bottom: 2em;
+    margin-bottom: 2em;
+    border-bottom: 0.01em darkgray solid;
+    justify-content: center;
+}
+#header_image{
+    max-height: 1.5em;
+}
+h1{
+    height: 1em;
+    font-size: 3.5em;
+}
+#searchbar{
+    height:3em;
+    border: 0.01em black solid;
+    border-radius: 10px;
+    border-radius:  10px 0 0 10px;
+    width: 80%;
+}
+#search_image{
+    height: 2.6em;
+    border: 0.01em black solid;
+    border-left: none;
+    border-radius: 0 10px 10px 0;
+}.social_icon{
+    height: 2em;
+}
+h1,h2{
+    font-family: var(--secondary-font);
+}
+h2{
+    font-size: 2em;
+    color: var(--primary-color);
+    letter-spacing: 1px;
+    margin-bottom: 0;
+    margin-top: 0.5em;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.social{
+    align-items: right;
+    justify-self: right;
+}
+.recipe_tag{
+    border: 0.01em black solid;
+    max-width: min-content;
+    height: 1em;
+    padding: .3em;
+    margin-right: 1em;
+    margin-bottom: 0;
+    white-space: nowrap;
+}
+.recipe_image{
+    max-width: 95%;
+    max-height: 95%;
+    margin-left: 2.5%;
+    margin-top: 2.5%;
+}
+.recipe_tags{
+    display:flex;
+    flex-direction: row;
+}
+a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+@media screen and (min-width: 600px){
+    .recipe{
+        flex-direction: row;
+    }
+    .recipe_image{
+        max-width: 50%;
+        max-height: 50%;
+        margin-left: 0%;
+        margin-right: 5%;
+        margin-top: 2.5%;
+    }
+    .recipe_desc{
+        display: block;
+    }
+    footer{
+        flex-direction: row-reverse;
+    }
+}
+@media screen and (min-width: 960px){
+    .recipe{
+        max-width: 960px;
+    }
+}
