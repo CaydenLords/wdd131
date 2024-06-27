@@ -14,36 +14,17 @@
     <link rel="icon" type="image/x-icon" href="images/recipe-book.png">
     <link rel = "stylesheet" type="text/css" href = "recipes.css"/>
     <script src = "recipes.mjs" type = "module" defer></script>
-    <script src = "main.js" defer></script>
+    <script src = "main.js" type = "module" defer></script>
     <title>Recipes</title>
 </head>
 <body>
     <header>
-        <h1><img src = "images/recipe-book.png" id = "header_image">RECIPEBOOK</h1>
+        <h1><img src = "images/recipe-book.png" id = "header_image" alt = "recipebook icon">RECIPEBOOK</h1>
     </header>
     <main>
         <div id = search>
             <input placeholder = "Find a recipe" id = "searchbar"></input>
-            <img src = "images/search.svg" id = "search_image">
-        </div>
-        <div class = "recipe">
-            <img src = "images/sweet-potato-waffle-md.jpg" class = "recipe_image">
-            <div class = "recipe_text">
-            <div class = "recipe_tags">
-                <h3 class = "recipe_tag">Waffles</h3>
-                <h3 class = "recipe_tag">Sweet Potato</h3>
-                <h3 class = "recipe_tag">Side</h3>
-            </div>
-            <h2 class = "recipe_title">Sweet Potato Waffles</h2>
-            <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
-                <span aria-hidden="true" class="icon-star">⭐</span>
-                <span aria-hidden="true" class="icon-star">⭐</span>
-                <span aria-hidden="true" class="icon-star">⭐</span>
-                <span aria-hidden="true" class="icon-star">⭐</span>
-                <span aria-hidden="true" class="icon-star-empty">☆</span>
-            </span>
-            <p class = "recipe_desc">Savory waffles made with Sweet potato with a hint of Ginger.</p>
-            </div>
+            <img src = "images/search.svg" id = "search_image" alt = "search icon">
         </div>
     </main>
     <footer>
