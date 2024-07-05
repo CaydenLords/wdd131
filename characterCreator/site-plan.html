@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8" />
+		<title>Site Plan</title>
+		<link type="text/css" rel="stylesheet" href="site-plan.css" />
+	</head>
+
+	<body>
+		<header>
+			<h1>[Site name] Site Plan</h1>
+			<h2>FirstName LastName</h2>
+			<h2>WDD 131-[section]</h2>
+			<!-- In the header above, add the name or your site, your name and class number. For example if you are in section 3 you would put WDD 131.03 -->
+		</header>
+		<main>
+			<!-- ------------------------Steps 2-3------------------------------ -->
+			<hr />
+			<h2>Overview</h2>
+			<h3>Purpose</h3>
+			<p>As a hardcore tabletop roleplaying gamer, I appreciate that making new characters is difficult. Specifically, I run Call of Cthulhu oneshots for my group, and I'm tired of helping people with making characters. 
+               So.... I'm going to take advantage of this project to build a online Call of Cthulhu Character creation helper. We'll see how much I add for this, maybe it'll just be skill choosing, but I'm going to make my life easier while doing homework. 
+            </p>
+			<!-- change this -->
+
+			<h3>Audience</h3>
+			<p>My tabletop group. That's it. <br/>
+                I suspect that this would also be useful to those who also play Call of Cthulhu. It's hard to make characters for it, as it's a complex system, so having something that makes it easier will be nice for those people I expect. 
+            </p>
+			<!-- change this -->
+
+			<h3>Dynamic elements</h3>
+			<p>The main dynamic elements will be the skill calculator. It will store an array of all the skills that the character can take, and allow them to adjust the skills up to their max skill amount. It will also display the "level" of each skill a player has put points in (Unskilled, Amateur, PHD, etc)
+            </p>
+			<!-- change this -->
+
+			<hr />
+			<h2>Branding</h2>
+			<h3>Website Logo</h3>
+			<!-- Replace this with some sort of logo for your site.  A logo can be as simple as the name of your site in a nice font :) -->
+			<img src="Images/ThuluLogo.png" alt="Logo image" />
+			<hr />
+			<h2>Style Guide</h2>
+
+			<!-- ------------------------Steps 4-8------------------------------ -->
+
+			<h3>Color Palette</h3>
+			<!--  The colors you choose for a website are one of the most important decisions you will make. Follow the instructions on the activity in iLearn then return and replace the color codes below with the hex color codes (the 6 digit numbers that show at the bottom of each color) for the colors you have chosen below.  You should have at least 2 colors but do not have to fill in all 4 if you do not need them.  -->
+
+			<!-- Copy and paste the URL to your finished palette below Make sure to paste it into both spots -->
+			Palette URL:
+			<a
+				href="https://coolors.co/22b14c-b5e61d-4f3130-e1b07e-fdffff"
+				target="_blank"
+				>https://coolors.co/22b14c-b5e61d-4f3130-e1b07e-fdffff</a
+			>
+
+			<table class="colors">
+				<tbody>
+					<tr>
+						<th>Primary</th>
+						<th>Secondary</th>
+						<th>Accent 1</th>
+						<th>Accent 2</th>
+					</tr>
+					<!-- Replace the numbers in the boxes below with your hex color codes. Then switch to the site-plan.css file and change your colors there as well. -->
+					<tr>
+						<td class="primary">[#22B14C]</td>
+						<td class="secondary">[#E1B07E]</td>
+						<td class="accent1">[#8F6538]</td>
+						<td class="accent2">[#B5E61D]</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<!-- ------------------------Step 9------------------------------ -->
+
+			<h3>Typography</h3>
+			<!-- Choose a font for your paragraphs (body copy) and headlines. What font(s) have you chosen? Why did you choose what you did?  Make sure to review the list of web safe fonts at W3Schools.org as a starting point.  Think also about which of your colors above you might use for background and font colors. -->
+
+			<h4>
+				Heading Font: Creepster
+				<!-- change this -->
+			</h4>
+			<h4>
+				Paragraph Font: Courier New
+				<!-- change this -->
+			</h4>
+			<h3>Normal paragraph example</h3>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+				veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+				commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+				velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+				occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+				mollit anim id est laborum.
+			</p>
+			<h3>Colored paragraph example</h3>
+			<p class="colored">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+				veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+				commodo consequat.
+			</p>
+
+			<!-- ------------------------Step 10------------------------------ -->
+
+			<h3>Navigation</h3>
+			<!-- Think about how you want your navigation bar to look. In the site-plan.css file change the colors to your colors to get the look you desire. -->
+			<nav>
+				<a href="#">Home</a>
+				<a href="#">Page2</a>
+				<a href="#">Page3</a>
+			</nav>
+			<hr />
+
+			<h2>Content</h2>
+			<h3>Home page</h3>
+			<p>Welcome to a unofficial Call of Cthulhu Character Generator! This section is devoted to helping you calculate your skills. </p>
+            <p>What occupation does your investigator have? [input]</p>
+            <p>What occupation skills do you have? [8 inputs of skill and starter percentage.]</p>
+            <p>What do you get your occupation points from? [Dropdown]</p>
+            <p>What is your EDU? [Input]</p>
+            <p>(If the occupation points aren't just based in EDU): What is your (Insert Stat Here)? [Input]</p>
+            <p>What is your INT? [Input]</p>
+			<h3>Page 2: Skill Calculation</h3>
+			<p>Occupation Skill Points left: [Amount]</p>
+            <p>Personal Interest Skill Points left: [Amount]</p>
+            <p>The 8 Class Skills, each with a [Changing Skill Level & Percentage] and a [number input] that changes the overall skill points</p>
+            <p>An add new skill button that adds more skills</p>
+			<h2>Wireframes</h2>
+			<p>
+				Create two wireframes for your site. One for each page and list them
+				here
+			</p>
+
+			<h3>Home</h3>
+			<img src="Images/Wireframe Home.png" alt="home page wireframe" />
+
+			<h3>[Page 2]</h3>
+			<p>
+				The "Unskilled" will change text and color based on the overall percentage
+			</p>
+			<img src="Images/Wireframe Calculations.png" alt="page 2 wireframe" />
+		</main>
+	</body>
+</html>
