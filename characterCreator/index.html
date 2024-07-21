@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A Credit Card Form">
+    <meta name="author" content="Cayden Lords">
+    <link rel = "stylesheet" type="text/css" href = "style.css"/>
+    <script src = "main.mjs" type = "module" defer></script>
+    <link rel="icon" type="image/x-icon" href="Images/ThuluLogo.png">
+    <title>Call of Cthulhu Skill Calculator</title>
+</head>
+<body>
+  <header>
+    <img src = "Images/investigator.jpg" alt = "Picture of Investigator" id = "headerimg">
+    <h1 id = "header_label">CoC Skill Calculator</h1>
+  </header>  
+  <main>
+    <p>Welcome to a unofficial Call of Cthulhu Character Generator! This section is devoted to helping you calculate your skills for your Call of Cthulhu investigator.  </p>
+    <form id = "prep_form" action = "calculator.html" method ="get">
+        <label id = "occupation_label" for = "occupation_input">What occupation does your investigator have? </label>
+        <input type = "text" id = "occupation_input">
+        <div id = "occupation_type_div">
+        <h2 id = "occupation_type_label">What do you get your occupation skills from? </h2>
+            <div>
+                <input id = "DEX_EDU" type = "radio" name = "gain_item" value = "EDU*2 + DEX*2">
+                <label class = "type_label" id = "DEX_EDU_label" for = "DEX_EDU">EDU*2+DEX*2</label>
+            </div>
+            <div>
+                <input id = "STR_EDU" type = "radio" name = "gain_item" value = "EDU*2 + STR*2">
+                <label class = "type_label" id = "STR_EDU_label" for = "STR_EDU">EDU*2+STR*2</label>
+            </div>
+            <div>
+                <input id = "APP_EDU" type = "radio" name = "gain_item" value = "EDU*2 + APP*2">
+                <label class = "type_label" id = "APP_EDU_label" for = "APP_EDU">EDU*2+APP*2</label>
+            </div>
+            <div>
+                <input id = "POW_EDU" type = "radio" name = "gain_item" value = "POW*2 + APP*2">
+                <label class = "type_label" id = "POW_EDU_label" for = "POW_EDU">EDU*2+POW*2</label>
+            </div>
+            <div>
+                <input id = "all_EDU" type = "radio" name = "gain_item" value = "EDUx4">
+                <label class = "type_label" id = "all_EDU_label" for = "all_EDU">EDU*4</label>
+            </div>
+        </div>
+        <div id = "get_stats">
+            <h2>What are your stats?</h2>
+            <label id = "EDU_label" for = "EDU_amount">What is your EDU? </label>
+            <input id = "EDU_amount" type = "number" min = "0" max = "100" value = "50">
+            <br>
+            <label id = "INT_label" for = "INT_amount">What is your INT? </label>
+            <input id = "INT_amount" type = "number" min = "0" max = "100" value = "50">
+            <br>
+            <label id = "relevant_label" for = "relevant_amount">If you have another relevant stat, what is it? </label>
+            <input id = "relevant_amount" type = "number" min = "0" max = "100" value = "50">
+        </div>
+        <h2 id = "occupation_skills_label">What are your occupation's skills?</h2>
+        <div class = "skills_input_div">
+            <div id = "skill_div_1">
+                <label class = "skill_start" for = "skill_name_1">1.</label>
+                <input type = "text" class = "skill_name" id = "skill_name_1">
+                <label class = "skill_start" for = "skill_num_1">Starting Skill Percentage:</label>
+                <input class = "skill_num" id = "skill_num_1" type = "number" min = "0" max = "100" value = "5">
+            </div>
+            <div id = "skill_div_2">
+                <label class = "skill_start" for = "skill_name_2">2.</label>
+                <input type = "text" class = "skill_name" id = "skill_name_2">
+                <label class = "skill_start" for = "skill_num_2">Starting Skill Percentage:</label>
+                <input class = "skill_num" id = "skill_num_2" type = "number" min = "0" max = "100" value = "5">
+            </div>
+            <div id = "skill_div_3">
+                <label class = "skill_start" for = "skill_name_3">3.</label>
+                <input type = "text" class = "skill_name" id = "skill_name_3">
+                <label class = "skill_start" for = "skill_num_3">Starting Skill Percentage:</label>
+                <input class = "skill_num" id = "skill_num_3" type = "number" min = "0" max = "100" value = "5">
+            </div>
+            <div id = "skill_div_4">
+                <label class = "skill_start" for = "skill_name_4">4.</label>
+                <input type = "text" class = "skill_name" id = "skill_name_4">
+                <label class = "skill_start" for = "skill_num_4">Starting Skill Percentage:</label>
+                <input class = "skill_num" id = "skill_num_4" type = "number" min = "0" max = "100" value = "5"> 
+            </div>
+            <div id = "skill_div_5">
+                <label class = "skill_start" for = "skill_name_5">5.</label> 
+                <input type = "text" class = "skill_name" id = "skill_name_5">
+                <label class = "skill_start" for = "skill_num_5">Starting Skill Percentage:</label>
+                <input class = "skill_num" id = "skill_num_5" type = "number" min = "0" max = "100" value = "5">
+            </div>
+            <div id = "skill_div_6">
+                <label class = "skill_start" for = "skill_name_6">6.</label>
+                <input type = "text" class = "skill_name" id = "skill_name_6">
+                <label class = "skill_start" for = "skill_num_6">Starting Skill Percentage:</label>
+                <input class = "skill_num" id = "skill_num_6" type = "number" min = "0" max = "100" value = "5">
+            </div>
+            <div id = "skill_div_7">
+                <label class = "skill_start" for = "skill_name_7">7.</label>
+                <input type = "text" class = "skill_name" id = "skill_name_7">
+                <label class = "skill_start" for = "skill_num_7">Starting Skill Percentage:</label>
+                <input class = "skill_num" id = "skill_num_7" type = "number" min = "0" max = "100" value = "5">
+            </div>
+            <div  id = "skill_div_8">
+                <label class = "skill_start" for = "skill_name_8">8.</label>
+                <input type = "text" class = "skill_name" id = "skill_name_8">
+                <label class = "skill_start" for = "skill_num_8">Starting Skill Percentage:</label>
+                <input class = "skill_num" id = "skill_num_8" type = "number" min = "0" max = "100" value = "5">    
+            </div>      
+        </div>
+        <input type = "submit">
+    </form>
+  </main>
+</body>
+</html>
